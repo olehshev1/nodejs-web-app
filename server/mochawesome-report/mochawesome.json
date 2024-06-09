@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-09T12:31:07.678Z",
+    "end": "2024-06-09T12:31:07.725Z",
+    "duration": 47,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7a91f5c4-4459-4f84-9f71-9ce8950c100c",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d974677a-fbfa-4089-8458-a941fd2f3958",
+          "title": "GET /users",
+          "fullFile": "/media/sf_ssd2t/home/dev/projects/trash/nodejs-web-app/server/test/integration/index.js",
+          "file": "/test/integration/index.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should display a list of users, fetched from db",
+              "fullTitle": "GET /users Should display a list of users, fetched from db",
+              "timedOut": false,
+              "duration": 43,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_chai.default.request(_index.default).get(\"/users\").then(res => {\n  (0, _chai.expect)(res).to.be.html;\n  res.text.should.match(/<h1.*>Users<\\/h1>/g);\n  res.text.should.match(/<h3.*>.*<\\/h3>/g);\n  done();\n}).catch(err => {\n  done(err);\n});",
+              "err": {},
+              "uuid": "9d1ab06e-1585-4f67-b23d-d3e2979bc994",
+              "parentUUID": "d974677a-fbfa-4089-8458-a941fd2f3958",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9d1ab06e-1585-4f67-b23d-d3e2979bc994"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 43,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.3.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
